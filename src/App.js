@@ -15,7 +15,7 @@ const App = () => {
       newArray.push(valueInput);
     }
 
-    return newArray;
+    console.log(newArray);
   }
 
   let array1 = createArray(3, 4);
@@ -51,10 +51,7 @@ const App = () => {
 
   return (
     <div>
-      {array1}
-      {array2}
-      {array3}
-      {array4}
+      
     </div>
   );
 
