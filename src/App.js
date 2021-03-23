@@ -16,6 +16,7 @@ const App = () => {
     }
 
     console.log(newArray);
+
   }
 
   let array1 = createArray(3, 4);
@@ -24,6 +25,10 @@ const App = () => {
   //    a. [1,2,3] = [3,2,1]
 
   const reverseArray = (arrayInput) => {
+
+    const newArray = arrayInput.reverse();
+
+    console.log(newArray);
 
   }
 
