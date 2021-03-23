@@ -19,7 +19,7 @@ const App = () => {
 
   }
 
-  let array1 = createArray(3, 4);
+  let array1 = createArray(3, 'apples');
 
   // 2. Reverse: Write a function that reverses the order of the items in the array
   //    a. [1,2,3] = [3,2,1]
@@ -40,6 +40,10 @@ const App = () => {
 
   const removeFalsyArrayItems = (arrayInput) => {
 
+    const newArray = arrayInput.filter(item => Boolean(item) === true);
+
+    console.log(newArray);
+
   }
 
   let array3 = removeFalsyArrayItems([1, 'apple', false, null, 'bananas', 45, '', 'alkali', undefined]);
@@ -49,6 +53,10 @@ const App = () => {
   //    b. the function should return [1, 4, 9, 100, 30]
 
   const removeDuplicateArrayItems = (arrayInput) => {
+
+    const newArray = arrayInput;
+
+    console.log(newArray);
 
   }
 
