@@ -54,7 +54,9 @@ const App = () => {
 
   const removeDuplicateArrayItems = (arrayInput) => {
 
-    const newArray = arrayInput;
+    const newArray = arrayInput.filter((item, index) => {
+      return arrayInput.indexOf(item) === index;
+    });
 
     console.log(newArray);
 
