@@ -19,7 +19,7 @@ const App = () => {
 
   }
 
-  let array1 = createArray(3, 'apples');
+  createArray(3, 'apples');
 
   // 2. Reverse: Write a function that reverses the order of the items in the array
   //    a. [1,2,3] = [3,2,1]
@@ -32,7 +32,7 @@ const App = () => {
 
   }
 
-  let array2 = reverseArray([1, 2, 3]);
+  reverseArray([1, 2, 3]);
 
   // 3. Create a function that removes all unnecessary elements from an array
   //    a. use this array: let dirtyArray = [1, 'apple', false, null, 'bananas', 45, '', 'alkali', undefined];
@@ -46,7 +46,7 @@ const App = () => {
 
   }
 
-  let array3 = removeFalsyArrayItems([1, 'apple', false, null, 'bananas', 45, '', 'alkali', undefined]);
+  removeFalsyArrayItems([1, 'apple', false, null, 'bananas', 45, '', 'alkali', undefined]);
 
   // 4. Create a function that returns a duplicate free array
   //    a. let duplicateArray = [1, 4, 9, 4, 100, 4, 30, 1]
@@ -54,13 +54,15 @@ const App = () => {
 
   const removeDuplicateArrayItems = (arrayInput) => {
 
-    const newArray = arrayInput;
+    const newArray = arrayInput.filter((item, index) => {
+      return arrayInput.indexOf(item) === index;
+    });
 
     console.log(newArray);
 
   }
 
-  let array4 = removeDuplicateArrayItems([1, 4, 9, 4, 100, 4, 30, 1]);
+  removeDuplicateArrayItems([1, 4, 9, 4, 100, 4, 30, 1]);
 
   return (
     <div>
